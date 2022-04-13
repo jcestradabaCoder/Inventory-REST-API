@@ -1,2 +1,2 @@
-# Inventory-REST-API
-Ejemplo 1 de una API REST.
+# Inventory REST API
+Ejemplo de una API REST.
