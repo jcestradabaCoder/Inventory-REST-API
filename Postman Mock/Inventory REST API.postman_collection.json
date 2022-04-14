@@ -6,6 +6,32 @@
 	},
 	"item": [
 		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Product name test 1\",\r\n    \"price\": \"1000.00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/products",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Get all Products",
 			"request": {
 				"method": "GET",
@@ -35,32 +61,6 @@
 					"path": [
 						"products",
 						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create Product",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Product name test 1\",\r\n    \"price\": \"1000.00\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/products",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"products"
 					]
 				}
 			},
