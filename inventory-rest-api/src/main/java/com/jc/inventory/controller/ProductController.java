@@ -66,7 +66,7 @@ public class ProductController {
 		
 		try {
 			Product product = productService.getproductById(productId);
-			productService.deleteProduct(productId);
+			productService.deleteProduct(product.getId());
 			return new ResponseEntity<>("Product deleted successfully!", HttpStatus.OK);
 		}
 		catch(Exception ex) {
