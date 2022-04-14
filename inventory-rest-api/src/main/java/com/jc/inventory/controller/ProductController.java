@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.jc.inventory.model.Product;
+import com.jc.inventory.entity.Product;
 import com.jc.inventory.service.ProductService;
 
 @RestController
@@ -25,15 +25,15 @@ public class ProductController {
 	private ProductService productService;
 	
 	
-	@GetMapping("/products")
-	public List<Product> getAllProducts() {
-		return productService.getAllProducts();
-	}
-	
 	@PostMapping("/products")
 	public ResponseEntity<String> createProduct(@RequestBody Product product) {
 		productService.createProduct(product);
 		return new ResponseEntity<>("Product created successfully!", HttpStatus.CREATED);
+	}
+	
+	@GetMapping("/products")
+	public List<Product> getAllProducts() {
+		return productService.getAllProducts();
 	}
 	
 	@GetMapping("/products/{productId}")

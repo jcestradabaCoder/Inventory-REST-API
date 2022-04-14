@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.jc.inventory.model.Product;
+import com.jc.inventory.entity.Product;
 import com.jc.inventory.repository.ProductRepository;
 import com.jc.inventory.service.ProductService;
 
@@ -17,13 +17,13 @@ public class ProductServiceImpl implements ProductService {
 	
 	
 	@Override
-	public List<Product> getAllProducts() {
-		return productRepository.findAll();
+	public void createProduct(Product product) {
+		productRepository.save(product);
 	}
 	
 	@Override
-	public void createProduct(Product product) {
-		productRepository.save(product);
+	public List<Product> getAllProducts() {
+		return productRepository.findAll();
 	}
 	
 	@Override

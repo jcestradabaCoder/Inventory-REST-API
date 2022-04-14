@@ -1,4 +1,4 @@
-package com.jc.inventory.model;
+package com.jc.inventory.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
