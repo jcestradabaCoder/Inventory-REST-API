@@ -1,0 +1,22 @@
+¿Qué es una API?
+
+La palabra API es un acrónimo que significa Interfaz de Programación de Aplicaciones (Application Programming Interface).
+Es un sistema que funciona como intermediario entre diferentes aplicaciones de software y su función es permitir que estas
+aplicaciones puedan comunicarse entre sí.
+
+¿Cómo funciona una API?
+
+Base de datos -> La información o las herramientas desarrolladas por una empresa son utilizadas en servicios de terceros.
+
+API -> Una API permite conectar la información o funcionalidades con los requerimientos de una aplicación.
+
+Aplicación -> El cliente tiene acceso a toda su información requerida en una sola aplicación.
+
+Base de Datos -> API -> Aplicación
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+¿Qué es REST?
+
+REST no es un protocolo ni un estándar, sino más bien un conjunto de límites de arquitectura. Los desarrolladores de las API pueden implementarlos
+de distintas maneras. REST es una arquitectura para APIs que se conectan vía web con el protocolo HTTP.
